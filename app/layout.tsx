@@ -1,10 +1,11 @@
 import { FC, PropsWithChildren } from "react";
 import '@/app/ui/globals.css';
+import { roboto } from "./ui/fonts";
 
 const RootLayout: FC<PropsWithChildren> = ({children}) => {
     return (
         <html>
-            <body className="text-center p-10 bg-blue-100 text-2xl">
+            <body className={`${roboto.className} bg-slate-500`}>
                 {children}
             </body>
         </html>
