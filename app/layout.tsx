@@ -4,7 +4,7 @@ import '@/app/ui/globals.css';
 const RootLayout: FC<PropsWithChildren> = ({children}) => {
     return (
         <html>
-            <body className="text-center p-10 bg-yellow-100 text-2xl">
+            <body className="text-center p-10 bg-blue-100 text-2xl">
                 {children}
             </body>
         </html>

@@ -1,8 +1,10 @@
+import styles from '@/app/ui/home.module.css'
+
 
 const Home = () => {
     return (
         <div>
-            <h1>Comenzando la app!!</h1>
+            <h1 className={styles.text}>Comenzando la app!!</h1>
         </div>
     );
 };
