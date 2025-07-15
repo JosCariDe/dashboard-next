@@ -1,6 +1,5 @@
 @import "tailwindcss";
-
-
+@config "../../tailwind.config.ts";
 .primary_text {
     padding: 10px;
     text-align: center;
