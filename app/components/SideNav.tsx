@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import { FaFileInvoice, FaHome, FaPowerOff, FaUsers } from 'react-icons/fa'
 import NavLinks from './NavLinks'
+import Link from 'next/link'
 
 
 const SideNav = () => {
@@ -18,10 +19,10 @@ const SideNav = () => {
                 <NavLinks/>
 
                 <div className='hidden h-full w-full grow md:block'></div>
-                <a href="/" className='flex mx-2 my-1 h-[48px] grow items-center justify-center gap-2 rounded-md bg-slate-500 p-3 text-lg text-white font-bold hover:bg-slate-400 hover:text-white md:flex-none md:justify-start md:p-2 md:px-3'>
+                <Link href="/" className='flex mx-2 my-1 h-[48px] grow items-center justify-center gap-2 rounded-md bg-slate-500 p-3 text-lg text-white font-bold hover:bg-slate-400 hover:text-white md:flex-none md:justify-start md:p-2 md:px-3'>
                     <FaPowerOff className='w-6' />
                     <p className='hidden md:block'>Logout</p>
-                </a>
+                </Link>
             </div>
         </div>
     )
