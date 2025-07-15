@@ -2,6 +2,7 @@ import { InfoCard } from "anjrot-components"
 import { bebas } from "../ui/fonts"
 import { fetchCardData } from "../helpers/api";
 import CardWrapper from "../components/CardWrapper";
+import ChartWrapper from "../components/ChartWrapper";
 
 
 const Dashboard = () => {
@@ -20,6 +21,7 @@ const Dashboard = () => {
         </div>
         <div className="w-full md:col-span-4">
           <h2 className={`${bebas.className} mb-4 text-xl md:text-2xl`}>Latest Invoices</h2>
+          <ChartWrapper/>
         </div>
       </div>
     </main>

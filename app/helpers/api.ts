@@ -37,10 +37,10 @@ export const fetchCardData = async () => {
 export const fetchRevenue = async() => {
     try {
         
-        const fetchRevenue = await fetch(`${process.env.BACKEND_URL}/revenues`);
-        const revenueResult = await fetchRevenue.json();
+        const fetchRevenue = await fetch(`${process.env.BACKEND_URL}/revenues`,  { headers });
+        const revenueResul = await fetchRevenue.json();
 
-        return revenueResult;
+        return revenueResul;
 
     } catch (error) {
         console.log("error :>> ", error);
