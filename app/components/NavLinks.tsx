@@ -9,12 +9,12 @@ const links = [
     },
     {
         name: "Invoices",
-        href: "/invoices",
+        href: "/dashboard/invoices",
         icon: FaFileInvoice
     },
     {
         name: "Customers",
-        href: "/customers",
+        href: "/dashboard/customers",
         icon: FaUsers
     },
 ]
