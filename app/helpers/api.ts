@@ -33,3 +33,17 @@ export const fetchCardData = async () => {
         throw new Error(`Failed to fetch card data.`)
     }
 }
+
+export const fetchRevenue = async() => {
+    try {
+        
+        const fetchRevenue = await fetch(`${process.env.BACKEND_URL}/revenues`);
+        const revenueResult = await fetchRevenue.json();
+
+        return revenueResult;
+
+    } catch (error) {
+        console.log("error :>> ", error);
+        throw new Error(`Failed to fetch revenue data.`)       
+    }
+}; 
