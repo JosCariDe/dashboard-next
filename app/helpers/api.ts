@@ -47,3 +47,15 @@ export const fetchRevenue = async() => {
         throw new Error(`Failed to fetch revenue data.`)       
     }
 }; 
+
+export const fetchInvoices = async () => {
+    try {
+        const fetchInvoices = await fetch(`${process.env.BACKEND_URL}/invoices`, {headers});
+        const invoicesResult = await fetchInvoices.json();
+
+        return invoicesResult;
+    } catch (error) {
+        console.log("error :>> ", error);
+        throw new Error('Failed to fetch Invoices data');
+    }
+}
